@@ -115,7 +115,7 @@
         <script>
             
             // ------------- Mask para CPF e CNPJ ------------------
-            var maskCpfOuCnpj = IMask(document.getElementById('cpf_cnpj'), {
+            var maskCpf_Cnpj = IMask(document.getElementById('cpf_cnpj'), {
                 mask:[
                     {
                         mask: '000.000.000-00',
@@ -130,6 +130,11 @@
               var phoneMask = IMask(
                 document.getElementById('telefone'), {
                     mask: '(00) 00000-0000'
+                });
+            //------------- Mask para CEP ------------------
+                var cepMask = IMask(
+                document.getElementById('cep'), {
+                    mask: '00000-000'
                 });
         </script>
     </body>
